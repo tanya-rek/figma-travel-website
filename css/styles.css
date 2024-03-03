@@ -1,0 +1,250 @@
+main {
+  font-size: 16px;
+  background-color: #f9f9f9;
+  padding: 100px 50px;
+}
+
+select {
+  opacity: 0.5;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Helper Classes */
+
+.br-10 {
+  border-radius: 10px;
+}
+
+.text-white {
+  color: white;
+}
+
+.m-l-7 {
+  margin-left: 7px;
+}
+
+.primary-color {
+  background-color: #43b97f;
+}
+
+.secondary-color {
+  background-color: #295943;
+}
+
+.secondary-text-color {
+  color: #295943;
+}
+
+/* Header */
+
+.container-for-header-and-section {
+  height: 720px;
+  background-image: url(../images/Background-header.png);
+  background-size: cover;
+}
+
+.header {
+  padding: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  color: white;
+}
+
+.main-navigation ul {
+  display: flex;
+  flex-direction: row;
+}
+
+ul li {
+  display: flex;
+  flex-direction: row;
+  margin-left: 40px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: black;
+}
+
+/* Section Search */
+
+.section-search {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+}
+
+.search-container {
+  width: 780px;
+  height: 286px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 350px;
+  margin-top: 200px;
+}
+
+.search-form {
+  width: 780px;
+  height: 67px;
+  display: grid;
+  grid-template-columns: 35% 0 1fr 0 1fr 0 1fr;
+  grid-template-areas: "destination . date . person . button";
+}
+
+.input {
+  height: 52px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  padding-left: 10px;
+}
+
+.destination {
+  grid-area: destination;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.date-of-stay {
+  grid-area: date;
+}
+
+.person {
+  grid-area: person;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.search-button {
+  width: 168px;
+  height: 49px;
+  background-color: #43b97f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  grid-area: button;
+}
+
+/* Section Travelers Point or About Company */
+
+.main-about {
+  height: 550px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-about--pictures {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 38% repeat(2, 20%);
+  grid-template-rows: 30% 40%;
+}
+
+.traveler-1 {
+  grid-column: 1;
+  grid-row-start: 1;
+  z-index: 10;
+}
+
+.traveler-2 {
+  grid-column: 2;
+  grid-row-start: 2;
+}
+
+.traveler-3 {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.main-about--text {
+  width: 50%;
+}
+
+.main-about-statistics--container {
+  height: 225px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding-top: 30px;
+  align-items: center;
+}
+
+/* Section Destination  */
+
+.main-products--text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  border-radius: 1rem;
+  padding: 10px;
+}
+
+.card-img-top {
+  border-radius: 1rem;
+}
+
+/* Footer */
+
+.footer {
+  color: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fpooter-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-title {
+  width: 25%;
+}
+
+.footer-links {
+  width: 25%;
+  padding-left: 100px;
+}
+
+.footer-services,
+.footer-contact {
+  width: 25%;
+  padding-left: 50px;
+}
+
+.footer-media {
+  padding-top: 20px;
+}
+
+.footer-media--container {
+  display: flex;
+  flex-direction: row;
+}
