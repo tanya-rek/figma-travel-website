@@ -15,6 +15,10 @@
     />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/9e00056d7e.js"
       crossorigin="anonymous"
@@ -23,7 +27,11 @@
   <body>
     <div class="container-for-header-and-section">
       <header class="header">
-        <h1>travelaja</h1>
+        <img
+          src="./images/travelaja-logo.png"
+          alt="travel company logo"
+          class="header-logo"
+        />
         <nav class="text-white main-navigation">
           <ul>
             <li><a href="#">Home</a></li>
@@ -36,7 +44,7 @@
         </nav>
         <div class="header-languages-container">
           <img src="./images/langID.png" alt="" />
-          <select name="languages" id="languages">
+          <select name="languages" id="languages" class="font-weight-bold">
             <option value="Indonesian">ID</option>
             <option value="English">EN</option>
           </select>
@@ -44,14 +52,21 @@
       </header>
       <section class="section-search">
         <div class="search-container">
-          <h2 class="text-white">Explore the world with a smile</h2>
-          <p class="text-white">
+          <h1 class="text-white font-size-48 font-weight-regular">
+            Explore the world with a smile
+          </h1>
+          <p class="text-white section-search--text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
             purus sit amet luctus venenatis, lectus magna fringilla urna,
             porttitor rhoncus dolor purus non enim praesent elementum facilisis
             leo,
           </p>
           <form action="#" class="search-form">
+            <span
+              class="material-symbols-outlined search-destination--location-icon"
+            >
+              location_on
+            </span>
             <input
               type="text"
               name="city"
@@ -73,7 +88,7 @@
               class="input person"
             />
             <button class="search-button">
-              Find trip <i class="fa-solid fa-magnifying-glass"></i>
+              Find Trip <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
         </div>
@@ -99,9 +114,11 @@
           />
         </div>
         <div class="main-about--text">
-          <h5 class="secondary-text-color">Travelers Point</h5>
-          <h3>We help to find your dream place</h3>
-          <p>
+          <p class="secondary-text-color font-weight-bold">Travelers Point</p>
+          <h3 class="font-size-28 font-weight-bold">
+            We help to find your dream place
+          </h3>
+          <p class="line-height-40">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
             purus sit amet luctus venenatis, lectus magna fringilla urna,
             porttitor rhoncus dolor purus non enim praesent elementum facilisis
@@ -109,19 +126,27 @@
           </p>
           <div class="main-about-statistics--container">
             <div>
-              <span class="secondary-text-color">100+</span>
+              <span class="secondary-text-color font-size-28 font-weight-bold"
+                >100+</span
+              >
               <p>Holiday Package</p>
             </div>
             <div>
-              <span class="secondary-text-color">68</span>
+              <span class="secondary-text-color font-size-28 font-weight-bold"
+                >68</span
+              >
               <p>Elite Transportation</p>
             </div>
             <div>
-              <span class="secondary-text-color">172</span>
+              <span class="secondary-text-color font-size-28 font-weight-bold"
+                >172</span
+              >
               <p>Hotels</p>
             </div>
             <div>
-              <span class="secondary-text-color">32M+</span>
+              <span class="secondary-text-color font-size-28 font-weight-bold"
+                >32M+</span
+              >
               <p>We helped to find their dream place</p>
             </div>
           </div>
@@ -130,23 +155,27 @@
       <!-- Section products -->
       <section class="main-products">
         <div class="main-products--text">
-          <h5 class="secondary-text-color">Top Destinations</h5>
-          <h3>Discover your love</h3>
+          <p class="secondary-text-color font-weight-bold">Top Destinations</p>
+          <h3 class="font-size-28 font-weight-bold">Discover your love</h3>
         </div>
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card">
               <img
                 src="./images/tours-1.png"
-                class="card-img-top"
+                class="card-img-top font-size-20 font-weight-bold"
                 alt="Taman Nasional Komodo"
               />
               <div class="card-body">
-                <h5 class="card-title mb-4">Taman Nasional Komodo</h5>
+                <h5 class="card-title mb-4 font-size-20 font-weight-bold">
+                  Taman Nasional Komodo
+                </h5>
                 <div class="d-flex justify-content-between">
-                  <p class="card-text secondary-text-color">Rp. 7,5jt</p>
-                  <span
-                    ><i class="fa-solid fa-location-arrow"></i> 7 days
+                  <p class="card-text secondary-text-color font-weight-bold">
+                    Rp. 7,5jt
+                  </p>
+                  <span class="font-size-14"
+                    ><i class="fa-solid fa-location-arrow m-r-5"></i> 7 days
                     trip</span
                   >
                 </div>
@@ -161,11 +190,15 @@
                 alt="Taman Nasional Bunaken"
               />
               <div class="card-body">
-                <h5 class="card-title mb-4">Taman Nasional Bunaken</h5>
+                <h5 class="card-title mb-4 font-size-20 font-weight-bold">
+                  Taman Nasional Bunaken
+                </h5>
                 <div class="d-flex justify-content-between">
-                  <p class="card-text secondary-text-color">Rp. 10,5jt</p>
-                  <span
-                    ><i class="fa-solid fa-location-arrow"></i> 9 days
+                  <p class="card-text secondary-text-color font-weight-bold">
+                    Rp. 10,5jt
+                  </p>
+                  <span class="font-size-14"
+                    ><i class="fa-solid fa-location-arrow m-r-5"></i> 9 days
                     trip</span
                   >
                 </div>
@@ -180,11 +213,15 @@
                 alt="Raja Ampat, Papua Barat"
               />
               <div class="card-body">
-                <h5 class="card-title mb-4">Raja Ampat, Papua Barat</h5>
+                <h5 class="card-title mb-4 font-size-20 font-weight-bold">
+                  Raja Ampat, Papua Barat
+                </h5>
                 <div class="d-flex justify-content-between">
-                  <p class="card-text secondary-text-color">Rp. 7,5jt</p>
-                  <span
-                    ><i class="fa-solid fa-location-arrow"></i> 14 days
+                  <p class="card-text secondary-text-color font-weight-bold">
+                    Rp. 7,5jt
+                  </p>
+                  <span class="font-size-14"
+                    ><i class="fa-solid fa-location-arrow m-r-5"></i> 14 days
                     trip</span
                   >
                 </div>
@@ -199,11 +236,15 @@
                 alt="Kepulauan Wakatobi"
               />
               <div class="card-body">
-                <h5 class="card-title mb-4">Kepulauan Wakatobi</h5>
+                <h5 class="card-title mb-4 font-size-20 font-weight-bold">
+                  Kepulauan Wakatobi
+                </h5>
                 <div class="d-flex justify-content-between">
-                  <p class="card-text secondary-text-color">Rp. 10,5jt</p>
-                  <span
-                    ><i class="fa-solid fa-location-arrow"></i> 12 days
+                  <p class="card-text secondary-text-color font-weight-bold">
+                    Rp. 10,5jt
+                  </p>
+                  <span class="font-size-14"
+                    ><i class="fa-solid fa-location-arrow m-r-5"></i> 12 days
                     trip</span
                   >
                 </div>
@@ -218,11 +259,15 @@
                 alt="Gili Trawangan, Lombok"
               />
               <div class="card-body">
-                <h5 class="card-title mb-4">Gili Trawangan, Lombok</h5>
+                <h5 class="card-title mb-4 font-size-20 font-weight-bold">
+                  Gili Trawangan, Lombok
+                </h5>
                 <div class="d-flex justify-content-between">
-                  <p class="card-text secondary-text-color">Rp. 7,5jt</p>
-                  <span
-                    ><i class="fa-solid fa-location-arrow"></i> 7 days
+                  <p class="card-text secondary-text-color font-weight-bold">
+                    Rp. 7,5jt
+                  </p>
+                  <span class="font-size-14"
+                    ><i class="fa-solid fa-location-arrow m-r-5"></i> 7 days
                     trip</span
                   >
                 </div>
@@ -237,11 +282,15 @@
                 alt="Taman Nasional Bromo"
               />
               <div class="card-body">
-                <h5 class="card-title mb-4">Taman Nasional Bromo</h5>
+                <h5 class="card-title mb-4 font-size-20 font-weight-bold">
+                  Taman Nasional Bromo
+                </h5>
                 <div class="d-flex justify-content-between">
-                  <p class="card-text secondary-text-color">Rp. 7,5jt</p>
-                  <span
-                    ><i class="fa-solid fa-location-arrow"></i> 7 days
+                  <p class="card-text secondary-text-color font-weight-bold">
+                    Rp. 7,5jt
+                  </p>
+                  <span class="font-size-14"
+                    ><i class="fa-solid fa-location-arrow m-r-5"></i> 7 days
                     trip</span
                   >
                 </div>
@@ -254,7 +303,11 @@
     <footer class="footer secondary-color">
       <div class="footer-container">
         <div class="footer-title">
-          <h1>travelaja</h1>
+          <img
+            src="./images/travelaja-logo.png"
+            alt="travelaja-logo"
+            class="footer-logo"
+          />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
             purus sit amet luctus venenatis, lectus magna fringilla urna,
@@ -262,8 +315,8 @@
             leo, vel
           </p>
         </div>
-        <div class="footer-links">
-          <h4>Links</h4>
+        <div class="footer-links line-height-40">
+          <h4 class="font-size-20 font-weight-bold">Links</h4>
           <ul>
             <li class="m-l-7"><a href="">Discover</a></li>
             <li class="m-l-7"><a href="">Special Deals</a></li>
@@ -272,8 +325,8 @@
             <li class="m-l-7"><a href="">About Us</a></li>
           </ul>
         </div>
-        <div class="footer-services">
-          <h4>Services</h4>
+        <div class="footer-services line-height-40">
+          <h4 class="font-size-20 font-weight-bold">Services</h4>
           <ul>
             <li class="m-l-7"><a href="">About Us</a></li>
             <li class="m-l-7"><a href="">Blog & Articles</a></li>
@@ -283,7 +336,7 @@
           </ul>
         </div>
         <div class="footer-contact">
-          <h4>Contact</h4>
+          <h4 class="font-size-20 font-weight-bold">Contact</h4>
           <p>Address: Jl.Codelaras No.205A</p>
           <p>Kediri, Pare AG17</p>
           <p>Phone: 123 456 7890</p>
@@ -292,7 +345,7 @@
         </div>
       </div>
       <div class="footer-media">
-        <h4>Follow Us</h4>
+        <h4 class="font-size-20 font-weight-bold">Follow Us</h4>
         <ul class="footer-media--container">
           <li class="m-l-7">
             <a href=""><i class="fa-brands fa-instagram"></i></a>
