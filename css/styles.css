@@ -65,6 +65,14 @@ button:hover {
   margin-right: 5px;
 }
 
+.m-r-15 {
+  margin-right: 15px;
+}
+
+.m-b-15 {
+  margin-bottom: 15px;
+}
+
 .primary-color {
   background-color: #43b97f;
 }
@@ -280,6 +288,54 @@ input::placeholder {
 
 .card-img-top {
   border-radius: 1rem;
+}
+
+/* Testimonial or Reviews */
+.main-reviews {
+  width: 100%;
+  height: 546px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.main-reviews-title--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.main-reviews--list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.reviews-list--item {
+  max-width: 379px;
+  height: 197px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.reviews-list--item:hover {
+  background-color: #43b97f;
+}
+
+.reviews-item--name {
+  height: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.reviews-item--text {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Footer */
