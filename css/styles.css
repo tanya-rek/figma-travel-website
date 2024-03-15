@@ -170,12 +170,12 @@ a:hover {
   width: 780px;
   height: 67px;
   display: grid;
-  grid-template-columns: 35% 0 1fr 0 1fr 0 1fr;
-  grid-template-areas: "destination . date . person . button";
+  grid-template-columns: 35% 0 1fr 0 2fr;
+  grid-template-areas: "destination . date . person";
 }
 
 .input {
-  height: 52px;
+  height: 67px;
   margin: 0;
   box-sizing: border-box;
   cursor: pointer;
@@ -188,9 +188,10 @@ input::placeholder {
 
 .search-destination--location-icon {
   position: absolute;
-  padding-top: 12px;
+  padding-top: 20px;
   padding-left: 10px;
   color: #295943;
+  z-index: 1;
 }
 
 .destination {
@@ -199,6 +200,7 @@ input::placeholder {
   border-bottom-left-radius: 8px;
   border: none;
   border-right: #295943 solid 1px;
+  position: relative;
 }
 
 .destination::placeholder {
@@ -210,12 +212,20 @@ input::placeholder {
   border: none;
 }
 
+input[type="date"] {
+  font-family: "Poppins", "Tahoma", "Verdana", sans-serif;
+  color: #295943;
+  font-size: 16px;
+  padding: 0 10px;
+}
+
 .person {
   grid-area: person;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   border: none;
   border-left: #295943 solid 1px;
+  position: relative;
 }
 
 .search-button {
@@ -225,7 +235,16 @@ input::placeholder {
   color: white;
   border: none;
   border-radius: 8px;
-  grid-area: button;
+  position: absolute;
+  right: 350px;
+  margin-top: 8px;
+  padding-top: 8px;
+}
+
+.search-btn--icon {
+  margin-left: 15px;
+  width: 24px;
+  height: 24px;
 }
 
 /* Section Travelers Point or About Company */
@@ -279,15 +298,48 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .card {
-  border-radius: 1rem;
   padding: 10px;
+  transition: transform 0.2s;
+  cursor: zoom-in;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 1rem;
 }
 
 .card-img-top {
   border-radius: 1rem;
+}
+
+.card:hover {
+  transform: scale(1.08);
+}
+
+.card--deal {
+  position: relative;
+}
+
+.hot-deal {
+  height: fit-content;
+  width: 170px;
+  padding: 5px 10px;
+  background-color: rgb(246, 47, 47);
+  border-radius: 2px;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 /* Testimonial or Reviews */
